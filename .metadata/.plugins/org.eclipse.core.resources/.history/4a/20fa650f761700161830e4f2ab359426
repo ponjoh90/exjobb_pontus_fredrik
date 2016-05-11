@@ -1,0 +1,38 @@
+/*
+ * memory.c
+ *
+ *  Created on: 10 maj 2016
+ *      Author: pojo
+ */
+
+#include "Memory.h"
+
+void memoryInit(SPI_Handle handle, int max_pages){
+	page_counter = 0;
+	array_counter = 0;
+	max_number_of_pages = max_pages;
+	SPIInitTest(handle);
+}
+
+void memorySendStroage(SPI_Handle handle){ // Skiter det sig måste man nog lägga in arr_data i send kommandot.
+	if(page_counter < max_number_of_pages){
+		SPISendCommand(handle, 0x06, NULL); //Write enable
+		SPISendCommand(handle, 0x02, NULL); //Page programing
+
+		if(SPI_sendArray(handle, arr_data, /*1**/256/**8?*/, page_counter)){ //256 bytes = 1 page(minsta möjliga)
+			//	hurra!
+		}
+		page_counter += 2;
+	    SPISendCommand(handle, 0x04, NULL);
+	}
+}
+
+void memoryStoreData(SPI_Handle handle, unsigned char data){
+	arr_data[array_counter] = data;
+
+	if(++array_counter == 256){
+		array_counter = 0;
+		memorySendStorage(handle);
+	}
+}
+

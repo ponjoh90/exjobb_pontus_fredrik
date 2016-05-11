@@ -6,16 +6,20 @@ making ../src/sysbios/rom_sysbios.aem3 ...
 gmake[1]: Entering directory 'C:/Users/pojo/workspace_v6_1_3/empty_min_CC1310DK_7XD_TI_CC1310F128/src/sysbios'
 gmake[1]: Nothing to be done for 'all'.
 gmake[1]: Leaving directory 'C:/Users/pojo/workspace_v6_1_3/empty_min_CC1310DK_7XD_TI_CC1310F128/src/sysbios'
-'Building file: ../ADC.c'
+'Building file: ../test.c'
 'Invoking: ARM Compiler'
-"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/pojo/workspace_v6_1_3/empty_min_CC1310DK_7XD_TI_CC1310F128" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_16_01_14/products/cc13xxware_2_03_02_16941" --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" -g --define=ccs --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d" --cmd_file="configPkg/compiler.opt" "../ADC.c"
-'Finished building: ../ADC.c'
-' '
-'Building target: empty_min_CC1310DK_7XD_TI_CC1310F128.out'
-'Invoking: ARM Linker'
-"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me -g --define=ccs --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"empty_min_CC1310DK_7XD_TI_CC1310F128.map" --stack_size=256 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="empty_min_CC1310DK_7XD_TI_CC1310F128_linkInfo.xml" --rom_model -o "empty_min_CC1310DK_7XD_TI_CC1310F128.out" "./ADC.obj" "./CC1310DK_4XD.obj" "./Memory.obj" "./SPI_own.obj" "./ccfg.obj" "./empty_min.obj" "../CC1310DK_4XD.cmd" -l"configPkg/linker.cmd" -l"C:/ti/tirtos_cc13xx_cc26xx_2_16_01_14/products/cc13xxware_2_03_02_16941/driverlib/bin/ccs/driverlib.lib" -llibc.a 
-<Linking>
-'Finished building target: empty_min_CC1310DK_7XD_TI_CC1310F128.out'
-' '
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/pojo/workspace_v6_1_3/empty_min_CC1310DK_7XD_TI_CC1310F128" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_16_01_14/products/cc13xxware_2_03_02_16941" --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" -g --define=ccs --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="test.d" --cmd_file="configPkg/compiler.opt" "../test.c"
+
+>> Compilation failure
+subdir_rules.mk:59: recipe for target 'test.obj' failed
+"../test.c", line 93: error #20: identifier "INT_AUX_ADC" is undefined
+"../test.c", line 106: error #20: identifier "AUX_WUC_MODCLKEN0_SOC_M" is undefined
+"../test.c", line 115: error #20: identifier "Power_SB_DISALLOW" is undefined
+"../test.c", line 142: error #256: type name is not allowed
+"../test.c", line 142: error #66: expected a ";"
+"../test.c", line 142: error #20: identifier "i" is undefined
+6 errors detected in the compilation of "../test.c".
+gmake: *** [test.obj] Error 1
+gmake: Target 'all' not remade because of errors.
 
 **** Build Finished ****

@@ -1,0 +1,17 @@
+/*
+ * ADC.c
+ *
+ *  Created on: 11 maj 2016
+ *      Author: pojo
+ */
+#include "ADC.h"
+
+void readADC(SPI_Handle handle){
+	int i;
+	for(i = 0; i < 4; i++){
+		//Hämta data från adc
+		memoryStoreData();
+	}
+}
+
+

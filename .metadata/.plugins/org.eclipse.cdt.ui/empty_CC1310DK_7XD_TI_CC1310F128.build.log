@@ -1,0 +1,39 @@
+
+**** Build of configuration Debug for project empty_CC1310DK_7XD_TI_CC1310F128 ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../empty.cfg'
+'Invoking: XDCtools'
+"C:/ti/xdctools_3_32_00_06_core/xs" --xdcpath="C:/ti/tirtos_cc13xx_cc26xx_2_16_01_14/packages;C:/ti/tirtos_cc13xx_cc26xx_2_16_01_14/products/tidrivers_cc13xx_cc26xx_2_16_01_13/packages;C:/ti/tirtos_cc13xx_cc26xx_2_16_01_14/products/bios_6_45_02_31/packages;C:/ti/tirtos_cc13xx_cc26xx_2_16_01_14/products/uia_2_00_05_50/packages;C:/ti/ccsv6/ccs_base;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M3 -p ti.platforms.simplelink:CC1310F128 -r release -c "C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS" --compileOptions "-mv7M3 --code_state=16 --float_support=vfplib -me --include_path=\"C:/Users/pojo/Desktop/Exjobb Pontus Fredrik/Kod/exjobb_pontus_fredrik/empty_CC1310DK_7XD_TI_CC1310F128\" --include_path=\"C:/ti/tirtos_cc13xx_cc26xx_2_16_01_14/products/cc13xxware_2_03_02_16941\" --include_path=\"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include\" -g --define=ccs --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi  " "../empty.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring empty.xem3 from package/cfg/empty_pem3.cfg ...
+generating custom ROM library makefile ... 
+Starting build of library sources ...
+making C:/Users/pojo/Desktop/EXJOBB~1/Kod/exjobb_pontus_fredrik/empty_CC1310DK_7XD_TI_CC1310F128/src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Entering directory `C:/Users/pojo/Desktop/EXJOBB~1/Kod/exjobb_pontus_fredrik/empty_CC1310DK_7XD_TI_CC1310F128/src/sysbios'
+clem3 C:/ti/tirtos_cc13xx_cc26xx_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/BIOS.c ...
+gmake[1]: Leaving directory `C:/Users/pojo/Desktop/EXJOBB~1/Kod/exjobb_pontus_fredrik/empty_CC1310DK_7XD_TI_CC1310F128/src/sysbios'
+Build of libraries failed.
+C:/Users/pojo/AppData/Local/Temp/make65988-1.sh: 1: Syntax error: Unterminated quoted string
+gmake[1]: *** [rom_sysbios.obj] Error 2
+gmake: *** [C:/Users/pojo/Desktop/EXJOBB~1/Kod/exjobb_pontus_fredrik/empty_CC1310DK_7XD_TI_CC1310F128/src/sysbios/rom_sysbios.aem3] Error 2
+error: xdc.cfg.SourceDir: "C:/ti/xdctools_3_32_00_06_core/packages/xdc/cfg/SourceDir.xs", line 209: xdc.cfg.SourceDir : Build of generated source libraries failed: exit status = 2:
+
+js: "C:/ti/xdctools_3_32_00_06_core/packages/xdc/cfg/Main.xs", line 160: Error: Configuration failed!
+gmake.exe: *** [package/cfg/empty_pem3.xdl] Error 1
+gmake.exe: *** Deleting file `package/cfg/empty_pem3.xdl'
+gmake.exe: *** [package/cfg/empty_pem3.xdl] Deleting file `package/cfg/empty_pem3.h'
+gmake.exe: *** [package/cfg/empty_pem3.xdl] Deleting file `package/cfg/empty_pem3.c'
+js: "C:/ti/xdctools_3_32_00_06_core/packages/xdc/tools/Cmdr.xs", line 51: Error: xdc.tools.configuro: configuration failed due to earlier errors (status = 2); 'linker.cmd' deleted.
+gmake: *** No rule to make target 'configPkg/linker.cmd', needed by 'configPkg/compiler.opt'.
+gmake: *** No rule to make target 'configPkg/linker.cmd', needed by 'configPkg/compiler.opt'.
+gmake: *** No rule to make target 'configPkg/linker.cmd', needed by 'configPkg/compiler.opt'.
+gmake: *** No rule to make target 'configPkg/linker.cmd', needed by 'configPkg/compiler.opt'.
+gmake: *** No rule to make target 'configPkg/linker.cmd', needed by 'configPkg/compiler.opt'.
+gmake: *** No rule to make target 'configPkg/linker.cmd', needed by 'configPkg/compiler.opt'.
+gmake: *** No rule to make target 'configPkg/linker.cmd', needed by 'configPkg/compiler.opt'.
+gmake: *** No rule to make target 'configPkg/linker.cmd', needed by 'configPkg/compiler.opt'.
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

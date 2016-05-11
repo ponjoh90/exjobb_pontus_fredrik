@@ -1,0 +1,17 @@
+/*
+ * ADC.h
+ *
+ *  Created on: 11 maj 2016
+ *      Author: pojo
+ */
+
+#ifndef ADC_H_
+#define ADC_H_
+
+#include <ti/drivers/SPI.h>
+
+void readADC(SPI_Handle handle);
+
+
+
+#endif /* ADC_H_ */

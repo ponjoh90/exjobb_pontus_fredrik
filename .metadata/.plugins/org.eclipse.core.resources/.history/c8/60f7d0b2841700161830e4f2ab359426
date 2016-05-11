@@ -1,0 +1,92 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CMD_SRCS += \
+../CC1310DK_4XD.cmd 
+
+CFG_SRCS += \
+../empty.cfg 
+
+C_SRCS += \
+../ADC.c \
+../CC1310DK_4XD.c \
+../Memory.c \
+../SPI_own.c \
+../ccfg.c \
+../empty.c \
+../empty_min.c \
+../test.c 
+
+OBJS += \
+./ADC.obj \
+./CC1310DK_4XD.obj \
+./Memory.obj \
+./SPI_own.obj \
+./ccfg.obj \
+./empty.obj \
+./empty_min.obj \
+./test.obj 
+
+C_DEPS += \
+./ADC.d \
+./CC1310DK_4XD.d \
+./Memory.d \
+./SPI_own.d \
+./ccfg.d \
+./empty.d \
+./empty_min.d \
+./test.d 
+
+GEN_MISC_DIRS += \
+./configPkg/ 
+
+GEN_CMDS += \
+./configPkg/linker.cmd 
+
+GEN_OPTS += \
+./configPkg/compiler.opt 
+
+GEN_FILES += \
+./configPkg/linker.cmd \
+./configPkg/compiler.opt 
+
+GEN_FILES__QUOTED += \
+"configPkg\linker.cmd" \
+"configPkg\compiler.opt" 
+
+GEN_MISC_DIRS__QUOTED += \
+"configPkg\" 
+
+C_DEPS__QUOTED += \
+"ADC.d" \
+"CC1310DK_4XD.d" \
+"Memory.d" \
+"SPI_own.d" \
+"ccfg.d" \
+"empty.d" \
+"empty_min.d" \
+"test.d" 
+
+OBJS__QUOTED += \
+"ADC.obj" \
+"CC1310DK_4XD.obj" \
+"Memory.obj" \
+"SPI_own.obj" \
+"ccfg.obj" \
+"empty.obj" \
+"empty_min.obj" \
+"test.obj" 
+
+C_SRCS__QUOTED += \
+"../ADC.c" \
+"../CC1310DK_4XD.c" \
+"../Memory.c" \
+"../SPI_own.c" \
+"../ccfg.c" \
+"../empty.c" \
+"../empty_min.c" \
+"../test.c" 
+
+
