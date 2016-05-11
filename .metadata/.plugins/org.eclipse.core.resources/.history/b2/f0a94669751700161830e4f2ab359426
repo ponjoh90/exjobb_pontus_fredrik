@@ -1,0 +1,15 @@
+/*
+ * ADC.c
+ *
+ *  Created on: 11 maj 2016
+ *      Author: pojo
+ */
+
+void readADC(SPI_Handle handle){
+	int i;
+	for(i = 0; i < 4; i++){
+
+	}
+}
+
+
